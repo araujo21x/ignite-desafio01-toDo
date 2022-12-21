@@ -34,7 +34,7 @@ export function ListToDos({ toDos, onRemoveToDo, onUpdateToDo }: IListToDosProps
     if (toDos.length === 0) {
       return (
         <div className={styles.boxWithoutContent}>
-          <img src={clipboard} alt='Ícone de planilha com lista' />
+          <img src={clipboard} alt=' Ícone de planilha com lista' />
           <p className={styles.withoutContentTitle}>Você ainda não tem tarefas cadastradas</p>
           <p className={styles.withoutContentSubTitle}>Crie tarefas e organize seus itens a fazer</p>
         </div>
