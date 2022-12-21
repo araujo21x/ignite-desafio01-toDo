@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper {
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+@media (max-width: 768px){
+  html{
+    font-size: 87.5%;
+  }
+}

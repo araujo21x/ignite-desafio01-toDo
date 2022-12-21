@@ -1,0 +1,162 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.headerToDos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 46rem;
+  padding-top: 3.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.headerToDos span {
+  border-radius: 999px;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  font-weight: bold;
+  padding: 0 0.6rem;
+}
+
+.pCreatedTasks {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.pDone {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.containerBoxToDo {
+  border-radius: 8px;
+  width: 46rem;
+  height: 32rem;
+  overflow-y: scroll;
+}
+
+.boxToDo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  min-height: 4.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem 1.1rem;
+}
+
+.boxContent {
+  display: flex;
+}
+
+.circleIcon {
+  color: var(--blue);
+  margin-right: 1rem;
+}
+
+.checkIcon {
+  color: var(--gray-100);
+  background-color: var(--purple);
+  border-radius: 90px;
+  margin-right: 1rem;
+}
+
+.trashIcon {
+  color: var(--gray-300);
+  margin-left: 2.5rem;
+}
+
+.trashIcon:hover {
+  color: var(--danger);
+}
+
+.content {
+  text-overflow: clip;
+  word-break: break-all;
+  max-width: 37em;
+}
+
+.contentDone {
+  color: var(--gray-300);
+  text-overflow: clip;
+  word-break: break-all;
+  max-width: 37em;
+  text-decoration: line-through;
+}
+
+.boxWithoutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-400);
+}
+
+.boxWithoutContent img{
+  margin-top: 4rem;
+}
+
+.withoutContentTitle{
+  margin-top: 1rem;
+  color: var(--gray-300);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.withoutContentSubTitle{
+  margin-top: 0.2rem;
+  color: var(--gray-300);
+  font-size: 1rem;
+}
+
+@media (max-width: 550px) {
+  .headerToDos {
+    width: 100%;
+  }
+
+  .containerBoxToDo {
+    width: 100%;
+    height: 37rem;
+  }
+
+  .content {
+    max-width: 20em;
+  }
+
+  .contentDone {
+    max-width: 20em;
+  }
+
+
+
+}
+
+@media (max-width: 400px) {
+  .content {
+    max-width: 17em;
+  }
+
+  .contentDone {
+    max-width: 17em;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .content {
+    max-width: 13em;
+  }
+
+  .contentDone {
+    max-width: 13em;
+  }
+
+}
